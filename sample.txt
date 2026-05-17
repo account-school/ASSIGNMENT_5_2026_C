@@ -1,0 +1,4 @@
+cse13s
+is a programming class
+in the cse dept
+at ucsc
