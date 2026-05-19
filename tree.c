@@ -127,7 +127,15 @@ void inOrderTraversal(Node* root) {
 
 void freeTree(Node* root) {
     /* TODO: Free any allocated memory */
-
+    if (root->left) {
+        freeTree(root->left);
+    }
+    if (root) {
+        free(root);
+    }
+    if (root->right) {
+        freeTree(root->right);
+    }
 }
 
 
