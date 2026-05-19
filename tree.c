@@ -130,11 +130,11 @@ void freeTree(Node* root) {
     if (root->left) {
         freeTree(root->left);
     }
-    if (root) {
-        free(root);
-    }
     if (root->right) {
         freeTree(root->right);
+    }
+    if (root) {
+        free(root);
     }
 }
 
